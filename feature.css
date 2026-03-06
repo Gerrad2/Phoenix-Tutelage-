@@ -1,0 +1,1318 @@
+/* ============================================
+   ===== NEW FEATURES CSS FOR PHOENIX TUTELAGE =====
+   ===== Add this AFTER your original CSS =====
+   ============================================ */
+
+/* ===== COUNTDOWN TIMER ===== */
+#countdown {
+    background: rgba(21, 101, 192, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+#countdown h3 {
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+#countdown > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#countdown > div div {
+    background: #1565c0;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+#countdown > div div span {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    color: #ffcc00;
+}
+
+/* ===== TESTIMONIAL SLIDER ===== */
+#testimonial-slider {
+    margin: 40px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #1565c0, #1a237e);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(21, 101, 192, 0.3);
+}
+
+#testimonial-slider h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#testimonial-slider .btn {
+    background: #ffcc00;
+    color: #0a2540;
+    border: none;
+    margin: 0 10px;
+}
+
+#testimonial-slider .btn:hover {
+    background: #ffd700;
+    transform: translateY(-2px);
+}
+
+/* ===== LIVE SEARCH ===== */
+#studentSearch {
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #1565c0;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+#studentSearch:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
+}
+
+/* ===== PRICE CALCULATOR ===== */
+#pricing > div:last-of-type {
+    margin: 30px 0;
+    padding: 30px;
+    background: #f0f4f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#plan-select, #duration-select {
+    padding: 10px 15px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+#plan-select:focus, #duration-select:focus {
+    border-color: #1565c0;
+    outline: none;
+}
+
+#total-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+#discount-info {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1565c0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+#back-to-top:hover {
+    background: #1a237e;
+    transform: scale(1.1);
+}
+
+/* ===== READING PROGRESS BAR ===== */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffcc00, #ff9800);
+    width: 0%;
+    z-index: 1001;
+    transition: width 0.2s ease;
+}
+
+/* ===== ENROLLMENT MODAL ===== */
+#enroll-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+#enroll-modal > div {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: slideIn 0.5s ease;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
+
+#close-modal:hover {
+    color: #333;
+}
+
+#enroll-form input,
+#enroll-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#enroll-form input:focus,
+#enroll-form select:focus {
+    border-color: #1565c0;
+    outline: none;
+}
+
+#enroll-form button {
+    width: 100%;
+    padding: 12px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+#enroll-form button:hover {
+    background: #1a237e;
+    transform: translateY(-2px);
+}
+
+/* ===== STATISTICS COUNTER ===== */
+#stats-counter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #0a2540, #1565c0);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#stats-counter div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+#stats-counter div div {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+#whatsapp-float {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 998;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+}
+
+#whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* ===== DARK MODE TOGGLE ===== */
+#dark-mode-toggle {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 997;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #1a1a2e;
+}
+
+.dark-mode section {
+    background-color: #16213e;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #ffcc00;
+}
+
+.dark-mode #container div,
+.dark-mode #contain div,
+.dark-mode #score div {
+    background: #0f3460;
+    color: white;
+    border-color: #e94560;
+}
+
+.dark-mode p {
+    color: #ddd;
+}
+
+.dark-mode #studentSearch {
+    background: #0f3460;
+    color: white;
+    border-color: #e94560;
+}
+
+.dark-mode #plan-select,
+.dark-mode #duration-select {
+    background: #0f3460;
+    color: white;
+    border-color: #e94560;
+}
+
+/* ===== WHATSAPP WIDGET ===== */
+#whatsapp-widget {
+    position: fixed;
+    bottom: 180px;
+    right: 30px;
+    z-index: 999;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    display: none;
+    overflow: hidden;
+}
+
+.popup-header {
+    background: #075e54;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.popup-body {
+    padding: 20px;
+}
+
+.quick-reply {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quick-reply:hover {
+    background: #e0e0e0;
+}
+
+.start-chat {
+    display: block;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.start-chat:hover {
+    background: #128C7E;
+}
+
+.close-popup {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.close-popup:hover {
+    opacity: 1;
+}
+
+/* ===== STUDY TIMER ===== */
+#study-timer {
+    background: linear-gradient(135deg, #0a2540, #1565c0);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 72px;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 20px 0;
+    color: #ffcc00;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timer-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.timer-btn.start {
+    background: #4CAF50;
+    color: white;
+}
+
+.timer-btn.pause {
+    background: #ff9800;
+    color: white;
+}
+
+.timer-btn.reset {
+    background: #f44336;
+    color: white;
+}
+
+.timer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timer-mode {
+    font-size: 18px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.timer-progress {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #ffcc00;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* ===== DAILY QUOTE ===== */
+#daily-quote {
+    margin: 30px 0;
+}
+
+.quote-container {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.quote-text {
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quote-icon {
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+/* ===== DOWNLOAD SECTION ===== */
+#download-section {
+    margin: 40px 0;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.download-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    border: 1px solid #eee;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(21, 101, 192, 0.1);
+}
+
+.download-card h4 {
+    color: #0a2540;
+    margin: 15px 0 10px;
+}
+
+.download-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #1a237e;
+    transform: scale(1.05);
+}
+
+/* ===== PROGRESS TRACKER ===== */
+#progress-tracker {
+    margin: 40px 0;
+}
+
+.progress-inputs {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #1565c0;
+}
+
+.progress-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #1565c0, #1a237e);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.goal-progress {
+    margin-top: 20px;
+}
+
+.goal-progress p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.3s;
+}
+
+/* ===== CLASS SCHEDULE ===== */
+#class-schedule {
+    margin: 40px 0;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.schedule-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #1565c0;
+    transition: all 0.3s;
+}
+
+.schedule-card.today {
+    border-left-color: #ffcc00;
+    background: #fff9e6;
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-day {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.schedule-time {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0a2540;
+}
+
+.schedule-subject {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-small {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-small:hover {
+    background: #1a237e;
+    transform: translateY(-2px);
+}
+
+/* ===== STUDY GROUPS ===== */
+#study-groups {
+    margin: 40px 0;
+}
+
+.group-filters {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 200px;
+    background: white;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #1565c0;
+}
+
+.groups-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.group-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #1565c0;
+    transition: all 0.3s;
+}
+
+.group-card.active {
+    border-left-color: #4CAF50;
+}
+
+.group-card.inactive {
+    opacity: 0.7;
+}
+
+.group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.group-header h4 {
+    color: #0a2540;
+    margin: 0;
+}
+
+.group-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.group-badge.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.join-group {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #1565c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.join-group:hover:not(:disabled) {
+    background: #1a237e;
+}
+
+.join-group:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* ===== SCORE PREDICTOR ===== */
+#score-predictor {
+    margin: 40px 0;
+}
+
+.predictor-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question-card {
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question-card label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0a2540;
+}
+
+.predictor-select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.predictor-select:focus {
+    outline: none;
+    border-color: #1565c0;
+}
+
+.predict-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.prediction-result {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.score-result {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.score-result.high {
+    background: #4CAF50;
+    color: white;
+}
+
+.score-result.medium {
+    background: #ff9800;
+    color: white;
+}
+
+.score-result.low {
+    background: #f44336;
+    color: white;
+}
+
+.prediction-tip {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    color: #1565c0;
+}
+
+/* ===== EXAM TIPS CAROUSEL ===== */
+#exam-tips {
+    margin: 40px 0;
+}
+
+.tips-carousel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.tip-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1565c0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.tip-nav:hover {
+    background: #1a237e;
+    transform: scale(1.1);
+}
+
+.tip-content-container {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    background: #f5f7fa;
+    border-radius: 10px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tip-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+.tip-counter {
+    font-size: 14px;
+    color: #999;
+}
+
+.tip-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tip-dot.active {
+    background: #1565c0;
+    transform: scale(1.3);
+}
+
+/* ===== ANNOUNCEMENT BANNER ===== */
+#announcement {
+    background: #ff9800;
+    color: white;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    animation: slideDown 0.5s ease;
+}
+
+.announcement-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+#close-announcement {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#close-announcement:hover {
+    opacity: 1;
+}
+
+/* ===== FAQ ACCORDION ===== */
+#faq {
+    margin: 40px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #0a2540;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #f5f7fa;
+}
+
+.faq-icon {
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    padding: 0 20px;
+    background: #f5f7fa;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 20px;
+}
+
+/* ===== COMPARISON TABLE ===== */
+#comparison {
+    margin: 40px 0;
+}
+
+.comparison-wrapper {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.comparison-table th {
+    background: #0a2540;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.comparison-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table tr:hover {
+    background: #f5f7fa;
+}
+
+.phoenix-col {
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.others-col {
+    color: #666;
+}
+
+/* ===== NEWSLETTER & CONTACT FORM STATUS MESSAGES ===== */
+.success-message {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    animation: slideIn 0.3s ease;
+}
+
+.error-message {
+    background: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    animation: slideIn 0.3s ease;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* ===== RESPONSIVE STYLES FOR NEW FEATURES ===== */
+@media (max-width: 768px) {
+    #countdown > div {
+        gap: 10px;
+    }
+    
+    #countdown > div div {
+        min-width: 60px;
+        padding: 10px;
+    }
+    
+    #countdown > div div span {
+        font-size: 24px;
+    }
+    
+    .timer-display {
+        font-size: 48px;
+    }
+    
+    .timer-controls {
+        flex-direction: column;
+    }
+    
+    .timer-btn {
+        width: 100%;
+    }
+    
+    .progress-inputs {
+        flex-direction: column;
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+    
+    .group-filters {
+        flex-direction: column;
+    }
+    
+    .filter-select {
+        width: 100%;
+    }
+    
+    .tips-carousel {
+        flex-direction: column;
+    }
+    
+    .tip-nav {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .whatsapp-popup {
+        width: 280px;
+        right: 0;
+    }
+    
+    .whatsapp-button span {
+        display: none;
+    }
+    
+    .whatsapp-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .whatsapp-button i {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    #whatsapp-float {
+        bottom: 80px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    #dark-mode-toggle {
+        top: 80px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-counter div {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer-display {
+        font-size: 36px;
+    }
+    
+    #studentSearch {
+        width: 95%;
+    }
+    
+    #plan-select, #duration-select {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

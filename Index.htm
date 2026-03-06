@@ -1,0 +1,817 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phoenix Tutelage - Elite UTME & WAEC Preparation Platform"/>
+    <title>Phoenix Tutelage</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="feature.css">
+    <link rel="stylesheet" href="news.css">
+    
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Your actual public key
+            emailjs.init("hMc7txIZMME5Hi3hW");
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <i class="fas fa-graduation-cap" style="color: #ffcc00; font-size: 30px;"></i>
+            <h1 class="logo-text">Phoenix Tutelage</h1>
+            <img src="./phoenix.jpg" alt="Phoenix Tutelage Logo" class="logo-img">
+        </div>
+        <nav>
+            <button id="menubtn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#fame"><i class="fas fa-trophy"></i> Hall of Fame</a></li>
+                <li><a href="#pricing"><i class="fas fa-tag"></i> Pricing</a></li>
+                <li><a href="#enroll-Now"><i class="fas fa-pen"></i> Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <i class="fas fa-star" style="font-size: 48px; color: #ffcc00;"></i>
+            <h2>Welcome to Phoenix Tutelage</h2>
+            <div class="container">
+                <h1 class="logo-text">Score High with Phoenix Tutelage</h1>
+                <p class="highlight"><i class="fas fa-bullseye"></i> Expedition: Become the highest scorer in 2026 JAMB</p>
+                <p><i class="fas fa-globe-africa"></i> Join one of the most intensive brainstorming platforms in sub-sahara Africa</p>
+                <a href="#pricing" class="btn"><i class="fas fa-arrow-right"></i> View premium plan and Enroll</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <i class="fas fa-chalkboard-teacher" style="font-size: 48px; color: #1565c0;"></i>
+            <h2>2026 UTME Class Features</h2>
+            <p><i class="fas fa-check-circle" style="color: green;"></i> Join our exclusive 2026 JAMB class where we provide intensive preparation for the upcoming exam.</p>
+            <p>We offer <strong><i class="fas fa-clock"></i> Four Hours</strong> of classes per day with two periods per class.</p>
+            
+            <div id="container">
+                <div class="alpha">
+                    <h3><i class="fas fa-book-open"></i> Training and Resources</h3>
+                    <ul>
+                        <li><i class="fas fa-hourglass-half"></i> 4 hours of daily intensive lecture</li>
+                        <li><i class="fas fa-history"></i> Breakdown of JAMB questions from 1978 to date</li>
+                        <li><i class="fas fa-microphone-alt"></i> Deep breakdown of Oral English & Set Novels</li>
+                        <li><i class="fas fa-puzzle-piece"></i> Access to practice tests and quizzes</li>
+                        <li><i class="fas fa-moon"></i> Once a week till day break (TDB) session</li>
+                    </ul>
+                </div>
+                <div class="beta">
+                    <h3><i class="fas fa-trophy"></i> Competition & Rewards</h3>
+                    <ul>
+                        <li><i class="fas fa-file-alt"></i> Bimonthly standard Mock Exams + <i class="fas fa-money-bill-wave"></i> Cash Prizes (Top 5)</li>
+                        <li><i class="fas fa-gamepad"></i> Bimonthly Olympiad Games for all subjects</li>
+                        <li><i class="fas fa-medal"></i> "Student of the Week" reward & recognition</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><i class="fas fa-hands-helping"></i> Support and Resources</h3>
+                    <ul>
+                        <li><i class="fas fa-wifi"></i> <strong>FREE 500MB+ Weekly Data</strong> for learning</li>
+                        <li><i class="fas fa-calendar-check"></i> Compulsory daily study structure & attendance tracking</li>
+                        <li><i class="fas fa-users"></i> Academic Families & Leagues for peer motivation</li>
+                        <li><i class="fas fa-broadcast-tower"></i> Access to mentorship broadcast & summary notes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hall of Fame Section -->
+        <section id="fame">
+            <div class="section-title">
+                <i class="fas fa-crown" style="font-size: 48px; color: gold;"></i>
+                <h2><i class="fas fa-trophy"></i> Hall of Fame</h2>
+                <p><i class="fas fa-star"></i> Our 2025 UTME Top Scorers <i class="fas fa-star"></i></p>
+            </div>
+            
+            <div id="score">
+                <div class="hall">
+                    <span><i class="fas fa-medal" style="color: gold;"></i> 357</span><br>
+                    <span><i class="fas fa-user-graduate"></i> Ademola Rufus</span>
+                </div>
+                <div class="hall">
+                    <span><i class="fas fa-medal" style="color: gold;"></i> 357</span><br>
+                    <span><i class="fas fa-user-graduate"></i> Familusi Opeyemi</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-medal" style="color: silver;"></i> 354</span><br>
+                    <span><i class="fas fa-user-graduate"></i> Alayode Timileyin</span>
+                </div>
+                <!-- More scores can be added here -->
+            </div>
+            <p><i class="fas fa-users"></i> ... and 30+ more students scoring 300 and above in the 2025 UTME!</p>
+            <img src="./fame.jpg" alt="Hall of Fame" class="fame-img">
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <i class="fas fa-tags" style="font-size: 48px; color: #1565c0;"></i>
+            <h2>Pricing Plans</h2>
+            <p><i class="fas fa-credit-card"></i> We offer competitive pricing plans to suit different needs and budgets.</p>
+            
+            <div id="contain">
+                <div>
+                    <h3 class="plan-name"><i class="fas fa-bronze"></i> Bronze Plan</h3>
+                    <p><i class="fas fa-naira-sign"></i> ₦12,000</p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-calendar-alt"></i> 2 Months Full Class Access</li>
+                        <li><i class="fas fa-wifi"></i> 500MB Weekly Data</li>
+                    </ul>
+                    <a href="https://wa.link/vjj8m6" class="btn"><i class="fab fa-whatsapp"></i> Choose Standard</a>
+                </div>
+                <div>
+                    <h3 class="plan-name"><i class="fas fa-silver"></i> Silver Plan</h3>
+                    <p><i class="fas fa-naira-sign"></i> ₦20,000</p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-calendar-alt"></i> 3 Months Full Access</li>
+                        <li><i class="fas fa-wifi"></i> 500MB Weekly Data</li>
+                        <li><i class="fas fa-mobile-alt"></i> FREE CBT Activation</li>
+                    </ul>
+                    <a href="https://wa.link/vjj8m6" class="btn"><i class="fab fa-whatsapp"></i> Choose Premium</a>
+                </div>
+                <div>
+                    <h3 class="plan-name"><i class="fas fa-gold"></i> Gold Plan</h3>
+                    <p><i class="fas fa-naira-sign"></i> ₦30,000</p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-calendar-alt"></i> 4 Months Full Access</li>
+                        <li><i class="fas fa-wifi"></i> 500MB Weekly Data</li>
+                        <li><i class="fas fa-mobile-alt"></i> FREE CBT Activation</li>
+                        <li><i class="fas fa-laptop"></i> Free Bootcamp Access</li>
+                    </ul>
+                    <a href="https://wa.link/vjj8m6" class="btn"><i class="fab fa-whatsapp"></i> Choose Premium</a>
+                </div>
+            </div>
+            
+            <p><i class="fas fa-info-circle"></i> Send the keyword <strong>"PHOENIX"</strong> to <i class="fab fa-whatsapp"></i> <a href="https://wa.link/vjj8m6">09024356181</a> for any inquiry</p>
+            <a href="https://wa.link/vjj8m6" class="p1"><i class="fab fa-whatsapp"></i> Click here to <strong>"Register"</strong> Now</a>
+        </section>
+
+        <!-- Book Images -->
+        <div style="text-align: center;">
+            <i class="fas fa-book-open" style="font-size: 24px;"></i>
+            <img src="./book.jpg" alt="books" class="books-img">
+            <i class="fas fa-book-reader" style="font-size: 24px;"></i>
+            <img src="./book3.jpg" alt="books" class="books-img">
+            <i class="fas fa-book" style="font-size: 24px;"></i>
+            <img src="./book1.jpg" alt="books" class="books-img">
+        </div>
+
+        <!-- Enroll Section -->
+        <section id="enroll-Now">
+            <i class="fas fa-rocket" style="font-size: 48px; color: #ff5722;"></i>
+            <h2>Ready to Dominate the 2026 UTME?</h2>
+            <p><i class="fas fa-users"></i> Join our elite group of students preparing for success!</p>
+            <a href="https://wa.link/vjj8m6" class="p1"><i class="fab fa-whatsapp"></i> <strong>"Register"</strong> Now</a>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section id="newsletter-signup" class="feature-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                    <h2>Get Free JAMB Tips & Updates</h2>
+                    <p class="newsletter-description">Join 500+ students receiving weekly study guides, past questions, and exam strategies directly to their inbox!</p>
+                    
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="form-group">
+                            <input type="text" id="newsletter-name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="newsletter-interest" name="interest">
+                                <option value="jamb">JAMB 2026 Preparation</option>
+                                <option value="waec">WAEC 2026</option>
+                                <option value="both">Both JAMB & WAEC</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="newsletter-submit-btn" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i> Subscribe Now
+                        </button>
+                    </form>
+                    
+                    <div id="newsletter-status"></div>
+                    <p class="newsletter-note"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact-form-section" class="feature-section">
+            <h2><i class="fas fa-paper-plane"></i> Send Us a Message</h2>
+            <p class="section-description">Have questions? Want to enroll? Fill this form and we'll get back to you within 24 hours!</p>
+            
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group half">
+                        <input type="text" id="contact-name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group half">
+                        <input type="email" id="contact-email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half">
+                        <input type="tel" id="contact-phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group half">
+                        <select id="contact-plan" name="plan" required>
+                            <option value="">Select Your Plan</option>
+                            <option value="bronze">Bronze Plan - ₦12,000</option>
+                            <option value="silver">Silver Plan - ₦20,000</option>
+                            <option value="gold">Gold Plan - ₦30,000</option>
+                            <option value="not-sure">Not sure yet / Need advice</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="contact-message" name="message" placeholder="Your Message or Questions" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" id="contact-submit-btn" class="btn contact-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            
+            <div id="contact-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="Contact">
+            <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+            <p><i class="fas fa-phone"></i> via phone 09024356181</p>
+            <p><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@phoenix_tutelage123">@phoenix_tutelage123</a></p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.link/vjj8m6">Click to chat</a></p>
+        </section>
+        <p><i class="far fa-copyright"></i> 2026 Phoenix Tutelage. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./email.js"></script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phoenix Tutelage - Elite UTME & WAEC Preparation Platform"/>
+    <title>Phoenix Tutelage</title>
+<style>
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        display: block;
+        margin: 10px 0; 
+    }
+    #container div, #contain div, #score div {
+        max-width: 100%;
+    
+    }
+    .books-img{
+        height: auto;
+        width: 100%;
+    }
+}
+    @media (min-width: 768px) {
+        header{
+            flex-direction: row;
+        }
+        .nav-links li {
+            display: inline;
+        }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #546e7a;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+header {
+    background-color: #0a2540;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+h1, h2, h3 {
+    color: #37473f;
+    font-weight: 600;
+}
+a {
+    color: #1565c0;
+    text-decoration: none;
+}
+.logo-text {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.logo-img {
+    height: 50px;
+    max-width: 100%;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links{
+    align-items: right;
+}
+.nav-links li{
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    margin-bottom: 40px;
+}
+.line li{
+    list-style: none;
+}
+a {
+    color: #1565c0;
+    text-decoration: none;
+}
+a:hover {
+    color: #1a237e;
+    text-decoration: underline;
+}
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff9800;
+}
+nav ul li a{
+    font-weight: bold;
+    color: white;
+}
+.nav-links li{
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+#score{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#score div{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 300px;  
+}
+#score span{
+    font-size: 18px;
+    line-height: 1.5;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+#container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#container div{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 400px;  
+}
+#container ul{
+    text-align: center;
+    margin-top: 10px;
+}
+#container ul li{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    justify-content: space-between;
+}
+#container p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+#contain{   
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contain div{
+    height: 270px;
+    width: 235px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 400px;}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+.btn:hover{
+    width: 100%;
+}
+.p1{
+    display: inline-block;
+    color: #fff;
+    border: 5px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.books-img{
+    height: 370px;
+    width: 335px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+#container div, #contain div, #score div {
+    background-color: #fff;
+    border: 1px solid #e1e5e9;
+    border-left: 4px solid #1565c0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.btn, .p1 {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+.btn:hover, .p1:hover {
+    background-color: #1a237e;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+}
+.highlight, .plan-name {
+    color: #1a237e;
+    font-weight: 600;
+}
+#score div {
+    background: linear-gradient(135deg, #1565c0, #1a237e);
+    color: white;
+}
+#score div span {
+    color: white;
+}
+#contain div:nth-child(1) {
+    border-left-color: #cd7f32;
+}
+#contain div:nth-child(2) {
+    border-left-color: #c0c0c0;
+}
+#contain div:nth-child(3) { 
+    border-left-color: #ff9800;
+}
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+strong {
+    color: #1a237e;
+}
+.books-img {
+    border: 2px solid #e1e5e9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+#menubtn{
+    display: none;
+    font-size: 26px;
+    background-color: none;
+    border: none;
+    color: white;
+}
+@media (max-width: 600px){
+    #menubtn{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
+p{
+    line-height: 1.6;
+}
+#Contact {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;background-color: #0d1b2a;
+}
+footer{
+    background-color: #0d1b2a;
+    border-top: 4px solid #1565c0;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 class="logo-text">Phoenix Tutelage</h1>
+            <img src="phoenix.jpg" alt="Phoenix Tutelage Logo" class="logo-img">
+        </div>
+        <nav>
+        <button id="menubtn">&#9776</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#fame">Hall of Fame</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#enroll-Now">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Phoenix Tutelage</h2>
+            <div class="container">
+                <h1 class="logo-text">Score High with Phoenix Tutelage</h1>
+                <p class="highlight">Expedition: Become the highest scorer in this 2026 JAMB </p>
+                <p>Join  one of the most intensive brainstorming platform in  sub-sahara Africa </p>
+                <a href="#pricing" class="btn">View premium plan and Enroll</a>
+            </div>
+        </section>
+        <section id="about">
+                <h2>2026 Class Utme Class Feature</h2>
+                <p>Join our exclusive 2026 JAMB class where we provide intensive preparation for the upcoming exam. Our class features personalized tutoring, comprehensive study materials, and expert guidance to help you achieve your target scores.</p>
+                <p>we offer <strong>Four Hours</strong> of classes and intensive brainstorming per day with Two periods per class.</p>
+            </div>
+            <div id="container">
+            <div class="alpha">
+                <h3>Training and Resources</h3>
+                <ul>
+                    <li>4 hours of daily intensive lecture </li>
+                    <li> Breakdown of JAMB questions from 1978 to date</li>
+                    <li>Deep breakdown of Oral English & Set Novels</li>
+                    <li>Access to practice tests and quizzes</li>
+                    <li>Once a week till day break(TDB) session</li>
+                </ul>
+            </div>
+            <div class="beta">
+                <h3>Competition & Rewards</h3>
+                <ul>
+                    <li>Bimonthly standard Mock Exams + Cash Prizes (Top 5)</li>
+                    <li>Bimonthly Olympiad Games for all subject</li>
+                    <li>"Student of the Week" reward & recognition</li>
+            </div>
+            <div>
+                <h3>Support and Resources</h3>
+            <ul>
+                <li> <strong>FREE 500MB+ Weekly Data</strong> for learning</li>
+                <li>Compulsory daily study structure & attendance tracking</li>
+                <li>Academic Families & Leagues for peer motivation</li>
+                <li>Access to mentorship broadcast & summary notes</li>
+            </ul>
+            </div>
+            </div>
+        </section>
+            <section id="fame">
+                    <div class="section-title">
+                        <h2>Hall of Fame</h2>
+                        <p>Our 2025 UTME Top Scorers</p>
+                    </div>
+                    <div id="score">
+                        <div class="hall">
+                            <span style="font-size: 18px;">357</span><br>
+                            <span >Ademola Rufus</span>
+                        </div>
+                        <div class="hall">
+                            <span>357</span><br>
+                            <span>Familusi Opeyemi</span>
+                        </div>
+                        <div>
+                            <span>354</span> <br>
+                            <span>Alayode Timileyin</span>
+                        </div>
+                        <div>
+                            <span>352</span><br>
+                            <span>Bamidele Deborah</span>
+                        </div>
+                        <div>
+                            <span>350</span><br>
+                            <span>Abdulwais nurudeen</span>
+                    </div>
+                    <div>
+                            <span>347</span><br>
+                            <span>Uche Philemon</span>
+                    </div>
+                    <div>
+                            <span>344</span><br>
+                            <span>Korede Abayomi</span>
+                    </div>
+                    <div>
+                            <span>343</span><br>
+                            <span>Nkoyo Favour</span>
+                    </div>
+                    <div>
+                            <span>342</span><br>
+                            <span>Ayoola Enitan</span>
+                    </div>
+                    <div>
+                            <span>341</span><br>
+                            <span>Babalola Emmanuel</span>
+                    </div>
+                    <div>
+                            <span>339</span><br>
+                            <span>Oluwarotimi Marvelous</span>
+                    </div>
+                    <div>
+                            <span>337</span><br>
+                            <span>Oni Christopher</span>
+                    </div>
+                    <div>
+                            <span>334</span><br>
+                            <span>Micheal</span>
+                    </div>
+                    <div>
+                            <span>333</span><br>
+                            <span>Muhideen Aremu</span>
+                    </div>
+                    <div>
+                            <span>330</span><br>
+                            <span>Ekpemupolo Esther</span>
+                    </div>
+                    <div>
+                            <span>328</span><br>
+                            <span>Wilson Biola</span>
+                    </div>
+                    <div>
+                            <span>323</span><br>
+                            <span>Aderinto John</span>
+                    </div>
+                    <div>
+                            <span>321</span><br>
+                            <span>Sylvester Chiamaka</span>
+                    </div>
+                    <div>
+                            <span>320</span><br>
+                            <span>Adekoya Blessing</span>
+                    </div>
+                    <div>
+                            <span>318</span><br>
+                            <span>Samson Deborah</span>
+                    </div>
+                        <p>... and 30+ more students scoring 300 and above in the 2025 UTME!</p>
+                    <img src="fame.jpg" alt="Hall of Fame" class="fame-img">
+        </section>
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <p>We offer competitive pricing plans to suit different needs and budgets. Choose the plan that works best for you:</p>
+            <div class="section-title" id="pricing" style="margin-top: 80px;">
+                <h2>Choose Your Success Plan</h2>
+                <p>Invest in your future with our structured, value-packed pricing.</p>
+            </div>
+            <div id="contain">
+                <div>
+                    <h3 class="plan-name">Bronze Plan</h3>
+                    <p><br>₦12,000</p>
+                    <ul class="plan-features">
+                        <li>2 Months Full Class Access</li>
+                        <li>500MB Weekly Data</li>
+                    </ul>
+                    <a href="https://wa.link/vjj8m6" class="btn">Choose Standard</a>
+                </div>
+                <div>
+                    <h3 class="plan-name">Silver Plan</h3>
+                    <p><br>₦20,000</p>
+                    <ul class="plan-features">
+                        <li>3 Months Full Access</li>
+                        <li>500MB Weekly Data</li>
+                        <li>FREE CBT Activation </li>
+                    </ul><br>
+                    <a href="https://wa.link/vjj8m6" class="btn">Choose Premium</a>
+                </div>
+                <div>
+                    <h3 class="plan-name">Gold Plan</h3>
+                    <p><br>₦30,000</p>
+                    <ul class="plan-features">
+                        <li>4 Months Full Access</li>
+                        <li>500MB Weekly Data</li>
+                        <li>FREE CBT Activation </li>
+                        <li>Free Bootcamp Access</li>
+                    </ul><br>
+                        <a href="https://wa.link/vjj8m6" class="btn">Choose Premium</a>
+                </div>
+                <p>Send the key word <strong>"PHOENIX"</strong> to <a href="https://wa.link/vjj8m6">09024356181</a> for any inquire or manual enrollment</p><br><br>
+            </div>
+            <a href="https://wa.link/vjj8m6" class="p1">Click here to <strong>"Register"</strong> Now</a>
+        </section>
+        <img src="book.jpg" alt="books" class="books-img">
+        <img src="book3.jpg" alt="books" class="books-img">
+        <img src="book1.jpg" alt="books" class="books-img">    
+        <section id="enroll-Now">
+            <h2>Ready to Dominate the 2026 UTME?</h2>
+            <p>Join our elite group of students who are preparing for the 2026 UTME. <br>Your path to success is just a click away!
+            </p>
+            <a href="https://wa.link/vjj8m6" class="p1">Click here to <strong>"Register"</strong> Now</a>
+        </section>
+    </main>
+    <footer>
+        <section id="Contact">
+            <h3>Contact Us</h3>
+            <p>via phone 09024356181</p>
+            <p>or get in touch via tiktok at <a href=https://www.tiktok.com/@phoenix_tutelage123?_r=1&_t=ZS-939bOAzAC4P">@phoenix_tutelage123</a></p>
+
+        </section>
+        <p>&copy; 2026 Phoenix Tutelage. All rights reserved.</p>
+    </footer>
+
+    <script>
+    const menubtn = document.getElementById('menubtn');
+    const navlinks = document.querySelector('.nav-links');
+    menubtn.addEventListener('click', () => {
+        if (navlinks.style.display === 'flex') {
+            navlinks.style.display = 'none';
+        } else {
+            navlinks.style.display = 'flex';
+        }
+    });
+    </script>
+</body>
+>>>>>>> 45a7746214a1bf97bf92045ba7bb30a808569f2d
+</html>
