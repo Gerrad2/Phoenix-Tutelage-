@@ -3,12 +3,128 @@
       {
         "src": "index.htm",
         "use": "@vercel/static"
+      },
+      {
+        "src": "index.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "email.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "index.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "feature.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "news.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "phoenix.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "fame.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "book.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "book1.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "book3.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "README.md",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "vercel.json",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/",
         "dest": "/index.htm"
+      },
+      {
+        "src": "/index.htm",
+        "dest": "/index.htm"
+      },
+      {
+        "src": "/index.html",
+        "dest": "/index.htm"
+      },
+      {
+        "src": "/index.js",
+        "dest": "/index.js"
+      },
+      {
+        "src": "/email.js",
+        "dest": "/email.js"
+      },
+      {
+        "src": "/index.css",
+        "dest": "/index.css"
+      },
+      {
+        "src": "/feature.css",
+        "dest": "/feature.css"
+      },
+      {
+        "src": "/news.css",
+        "dest": "/news.css"
+      },
+      {
+        "src": "/phoenix.jpg",
+        "dest": "/phoenix.jpg"
+      },
+      {
+        "src": "/fame.jpg",
+        "dest": "/fame.jpg"
+      },
+      {
+        "src": "/book.jpg",
+        "dest": "/book.jpg"
+      },
+      {
+        "src": "/book1.jpg",
+        "dest": "/book1.jpg"
+      },
+      {
+        "src": "/book3.jpg",
+        "dest": "/book3.jpg"
+      },
+      {
+        "src": "/README.md",
+        "dest": "/README.md"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.htm"
       }
-    ]
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      }
+    ],
+    "cleanUrls": true
   }
